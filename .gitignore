@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+
+# FastF1 cache
+cache/
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# MacOS / Linux / Windows
+.DS_Store
+Thumbs.db
