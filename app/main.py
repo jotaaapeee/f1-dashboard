@@ -1,11 +1,14 @@
-from fastapi import FastAPI
-from app.services import get_race_results
 from fastapi import FastAPI, Response
+from app.services import get_race_results
 import matplotlib.pyplot as plt
 import io
 import fastf1
 
 app = FastAPI()
+
+@app.get("/test")
+def read_race():
+    return {"message": "Hello, World!"}
 
 @app.get("/race/{year}/{gp}")
 def read_race(year: int, gp: str):

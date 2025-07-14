@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    container_name: f1-api
+    working_dir: /app
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1 
