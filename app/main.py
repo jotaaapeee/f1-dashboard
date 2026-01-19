@@ -7,6 +7,11 @@ import fastf1
 
 app = FastAPI()
 
+@app.get("/teste")
+def aaaaaa():
+    a = print('poggers')
+    return a
+
 @app.get("/race/{year}/{gp}")
 def read_race(year: int, gp: str):
     return get_race_results(year, gp)
